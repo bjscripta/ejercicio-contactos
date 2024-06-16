@@ -24,7 +24,6 @@ def opcion2():
     if len(contactos)==0:
         print("No existen contactos")
     else:
-        print("Nombre\tNumero de telefono\tCorreo Electronico")
         for i in contactos:
             print(f"Nombre:{i[0]} Numero de telefono:{i[1]} Correo electronico:{i[2]}")
 
