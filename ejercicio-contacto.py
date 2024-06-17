@@ -1,5 +1,5 @@
 import time
-from funciones import *
+from funcionescontacto import *
 
 while True:
     limpiar()
