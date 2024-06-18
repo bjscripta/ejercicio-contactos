@@ -8,7 +8,15 @@ while True:
           2. Mostrar contactos
           3. Imprimir planilla
           4. Salir del programa""")
-    opc = int(input("Ingrese opcion: "))
+    while True:
+        try:
+            opc = int(input("Ingrese opcion: "))
+            if opc in (1,2,3,4):
+                break
+            else:
+                print("ERROR, Opcion no disponible")
+        except:
+            print("ERROR, solo se permiten numeros enteros")
     limpiar()
     if opc==1:
         opcion1()
